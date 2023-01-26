@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Armstrong Calculator</title>
+  </head>
+  <body>
+    <div class="containerMain">
+      <div class="header">
+        <input
+          id="width"
+          type="text"
+          placeholder="Ширина в миллиметрах"
+          value="1500"
+        />
+        <br />
+        <input
+          id="height"
+          type="text"
+          placeholder="Длина в миллиметрах"
+          value="1500"
+        />
+        <br />
+        <input id="line" type="text" placeholder="Ширина шва 1-5мм" value="1" />
+        <br />
+        <div>
+          <button*5></button*5>
+        </div>
+        <button id="calculate">Расчитать</button>
+        <br />
+        <button id="centred">Отцентровать</button>
+        <br />
+      </div>
+      <div class="cost">
+        <table class="testTab">
+          <tr>
+            <td>Площадь комнаты</td>
+            <!-- <td id="ploshad"></td> -->
+            <td class="calculated_area"></td>
+          </tr>
+          <tr>
+            <td>Периметр комнаты</td>
+            <!-- <td id="perimetr"></td> -->
+            <td class="calculated_perimeter"></td>
+          </tr>
+          <tr>
+            <td>Количество блоков</td>
+            <td class="total_blocks"></td>
+          </tr>
+
+          <tr>
+            <td>Параметры</td>
+            <td class="parametrs">Высота х Ширина</td>
+          </tr>
+
+          <tr>
+            <td>Размер блока</td>
+            <td class="oneBlock"></td>
+          </tr>
+          <tr>
+            <td>Размер блока А</td>
+            <td id="razmA"></td>
+            <td class="testLittleA"></td>
+          </tr>
+          <tr>
+            <td>Размер блока В</td>
+            <td id="razmB"></td>
+            <td class="testLittleB"></td>
+          </tr>
+          <tr>
+            <td>Размер блока С</td>
+            <td id="razmC"></td>
+            <td class="testLittleC"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="littleBlocks">
+        <div class="divA">
+          <div class="letterA">A:</div>
+          <canvas class="lb" id="blockA"></canvas>
+        </div>
+
+        <div class="divB">
+          <div class="letterB">B:</div>
+          <canvas class="lb" id="blockB"></canvas>
+        </div>
+
+        <div class="divC">
+          <div class="letterC">C:</div>
+          <canvas class="lb" id="blockC"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="roomDraw"></div>
+
+    <div class="footer">
+      <p class="reserved">© Sergey Pankov. 2023 All rigths reserved</p>
+      <a
+        class="gitHubLink"
+        href="https://github.com/GuessMF/Armstrong_Calculator_JS.git"
+        ><img class="githubLogo" src="images/github4x.png"
+      /></a>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
