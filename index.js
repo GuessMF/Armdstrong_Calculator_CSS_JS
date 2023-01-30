@@ -20,12 +20,17 @@ line.addEventListener("keyup", function () {
 
 let buttons = document.querySelector(".buttons");
 buttons.addEventListener("click", (e) => {
-  if (e.target.id && (width.value || height.value) <= 200000) {
+  if (
+    e.target.id &&
+    (width.value || height.value) <= 200000 &&
+    (width.value || height.value) >= 600 &&
+    line.value
+  ) {
     document.querySelector(".cost").style.display = "block";
     document.querySelector(".containerMain").style.display = "inline-flex";
     universal(e.target.id);
   } else {
-    alert("No");
+    alert("Проверьте правильность ввода значений");
   }
 });
 
@@ -99,7 +104,6 @@ function universal(idTarget) {
     littleBlockHeight == 60
       ? (compensHeight = HEIGHT)
       : (compensHeight = HEIGHT + 1);
-    console.log("rabotaet");
   }
   for (i = 0; i < compensHeight; i++) {
     let newTr = document.createElement("tr");
