@@ -19,13 +19,20 @@ body {
   touch-action: manipulation;
 }
 input {
-  width: 150px;
+  /* width: 150px;
   height: 25px;
   border: black solid 1px;
   margin-top: 20px;
   border-radius: 6px;
   color: #2d1207;
-  background-color: #e1f2ef;
+  background-color: #119e84;
+  */
+  width: 80px;
+  height: 20px;
+  margin: 10px auto;
+  border-radius: 6px;
+  border: black 1px solid;
+  background-color: #b7cfcf;
 }
 
 button {
@@ -33,24 +40,40 @@ button {
   width: 154px;
   height: 25px;
   margin-top: 20px;
-  border: black solid 1px;
+  /* border: black solid 1px; */
   background-color: #747a7e;
+  border: none;
+  box-shadow: 1px 2px 3px rgb(107 105 105);
   color: #001313;
   border-radius: 6px;
 }
+
+.buttons {
+  width: min-content;
+  margin: 0 auto;
+}
 .header {
-  margin-left: 20px;
-  width: 200px;
+  margin: 20px;
+  /* // margin-left: 20px;
+  /* width: 200px; */
+  /* width: auto; */
+  display: flex;
+  flex-direction: column;
+}
+
+.header span {
+  margin: 0 auto;
 }
 .cost {
   width: 400px;
+  display: none;
 }
 table {
   font-size: 15px;
 }
 
 .containerMain {
-  display: inline-flex;
+  /* display: inline-flex; */
   width: 100%;
 }
 .canv {
@@ -61,9 +84,13 @@ table {
 }
 
 .testTab {
-  margin-top: 2%;
+  margin-top: 20px;
   margin-left: 20px;
   /* background-color: #b1c6d6; */
+}
+
+.testTab tbody {
+  margin: 100px;
 }
 .parametrs {
   display: none;
@@ -142,10 +169,8 @@ table {
 }
 
 .roomDraw {
-  /* width: max-content; */
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
+  width: max-content;
+  margin: 50px auto;
 }
 
 .bottomTr {

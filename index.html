@@ -16,29 +16,20 @@
   <body>
     <div class="containerMain">
       <div class="header">
-        <input
-          id="width"
-          type="text"
-          placeholder="Ширина в миллиметрах"
-          value="1500"
-        />
-        <br />
-        <input
-          id="height"
-          type="text"
-          placeholder="Длина в миллиметрах"
-          value="1500"
-        />
-        <br />
-        <input id="line" type="text" placeholder="Ширина шва 1-5мм" value="1" />
-        <br />
-        <div>
-          <button*5></button*5>
+        <span>Ширина комнаты (mm): </span>
+        <input id="width" type="text" placeholder="0-200000mm" />
+
+        <span>Длина комнаты (mm): </span>
+        <input id="height" type="text" placeholder="0-200000mm" />
+
+        <span>Ширина шва:</span>
+        <input id="line" type="text" placeholder="1-5mm" />
+
+        <div class="buttons">
+          <button id="calculate">Расчитать</button>
+
+          <button id="centred">Отцентровать</button>
         </div>
-        <button id="calculate">Расчитать</button>
-        <br />
-        <button id="centred">Отцентровать</button>
-        <br />
       </div>
       <div class="cost">
         <table class="testTab">
@@ -58,7 +49,7 @@
           </tr>
 
           <tr>
-            <td>Параметры</td>
+            <td>Параметры:</td>
             <td class="parametrs">Высота х Ширина</td>
           </tr>
 
@@ -103,7 +94,7 @@
     <div class="roomDraw"></div>
 
     <div class="footer">
-      <p class="reserved">© Sergey Pankov. 2023 All rigths reserved</p>
+      <p class="reserved"></p>
       <a
         class="gitHubLink"
         href="https://github.com/GuessMF/Armstrong_Calculator_JS.git"
