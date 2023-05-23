@@ -1,51 +1,44 @@
 html {
   height: 100%;
 }
-/* body{
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  
-  } */
 
 body {
-  background-color: #98b9ab;
+  background: linear-gradient(#a6acee, #e9aeae);
   font-family: "Poppins", sans-serif;
-
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
 
   touch-action: manipulation;
 }
+.title {
+  width: fit-content;
+}
 input {
-  /* width: 150px;
-  height: 25px;
-  border: black solid 1px;
-  margin-top: 20px;
-  border-radius: 6px;
-  color: #2d1207;
-  background-color: #119e84;
-  */
-  width: 80px;
+  width: 100px;
   height: 20px;
   margin: 10px auto;
   border-radius: 6px;
-  border: black 1px solid;
-  background-color: #b7cfcf;
+  border: none;
+  background-color: #a5a7e7;
 }
 
 button {
   margin-top: 10px;
   width: 154px;
-  height: 25px;
+  height: 30px;
   margin-top: 20px;
-  /* border: black solid 1px; */
-  background-color: #747a7e;
+  background-color: #d6d37e;
   border: none;
-  box-shadow: 1px 2px 3px rgb(107 105 105);
+  box-shadow: 1px 2px 3px #d6d37e;
   color: #001313;
   border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: #f5ef56;
+  box-shadow: 1px 2px 3px #f5ef56;
 }
 
 .buttons {
@@ -54,9 +47,6 @@ button {
 }
 .header {
   margin: 20px;
-  /* // margin-left: 20px;
-  /* width: 200px; */
-  /* width: auto; */
   display: flex;
   flex-direction: column;
 }
@@ -73,8 +63,12 @@ table {
 }
 
 .containerMain {
-  /* display: inline-flex; */
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: rgb(111, 207, 98);
+  box-shadow: 1px 2px 3px #4e5392;
+  background: #868ff3;
 }
 .canv {
   display: block;
